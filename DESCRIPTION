@@ -14,7 +14,8 @@ Description: This is a demo package for the "Building Tidy Tools" workshop at
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-URL: https://github.com/ngiangre/ussie
+URL: https://github.com/ngiangre/ussie,
+    http://nickg.bio/ussie/
 BugReports: https://github.com/ngiangre/ussie/issues
 RoxygenNote: 7.2.1
 Suggests: 
