@@ -1,0 +1,27 @@
+---
+title: "How to make league data"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{how_to_make_league_table}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(ussie)
+library(dplyr)
+```
+
+ussie let's you work with european football data from the engsoccerdata package by making standard tibbles for each league
+
+```{r}
+spain <- uss_make_matches(engsoccerdata::spain,"Spain")
+glimpse(spain)
+```

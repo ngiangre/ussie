@@ -19,8 +19,11 @@ BugReports: https://github.com/ngiangre/ussie/issues
 RoxygenNote: 7.2.1
 Suggests: 
     engsoccerdata,
+    knitr,
+    rmarkdown,
     testthat (>= 3.0.0)
 Imports: 
     dplyr,
     tibble
 Config/testthat/edition: 3
+VignetteBuilder: knitr
