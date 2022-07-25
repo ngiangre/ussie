@@ -19,3 +19,6 @@ a tibble with columns `country`, `date`, `season`, `tier`, `home`,
 Given a league-play data frame from {engsoccer}, returns a tibble with
 standardised column-names and types, e.g. `date` is a `Date`.
 }
+\examples{
+uss_make_matches(engsoccerdata::spain,"Spain")
+}

@@ -8,9 +8,13 @@
 #'
 #' @return a tibble with columns `country`, `date`, `season`, `tier`, `home`,
 #'    `visitor`, `goals_home`, `goals_visitor`.
+#' @importFrom tibble tibble
+#' @importFrom dplyr transmute
+
 #' @export
 #'
 #' @examples
+#' uss_make_matches(engsoccerdata::spain,"Spain")
 uss_make_matches <- function(data_engsoc,country) {
     result <-
         data_engsoc |>
