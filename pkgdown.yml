@@ -1,0 +1,10 @@
+pandoc: 2.14.2
+pkgdown: 2.0.6
+pkgdown_sha: ~
+articles:
+  how_to_make_league_table: how_to_make_league_table.html
+last_built: 2022-07-25T20:40Z
+urls:
+  reference: http://nickg.bio/ussie/reference
+  article: http://nickg.bio/ussie/articles
+
