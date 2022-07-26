@@ -7,18 +7,20 @@
 uss_make_matches(data_engsoc, country)
 }
 \arguments{
-\item{data_engsoc}{obtained from {engsoccerdata}.}
+\item{data_engsoc}{`data.frame` obtained from {engsoccerdata}.}
 
-\item{country}{`character` scalar, specifies the league.}
+\item{country}{`character` scalar, specifies the league.
+`uss_countries()` returns choices available from {engsoccerdata}}
 }
 \value{
-a tibble with columns `country`, `date`, `season`, `tier`, `home`,
-   `visitor`, `goals_home`, `goals_visitor`.
+[tibble][tibble::tibble-package] with columns `country`, `date`,
+ `season`, `tier`, `home`, `visitor`, `goals_home`, `goals_visitor`.
 }
 \description{
 Given a league-play data frame from {engsoccer}, returns a tibble with
-standardised column-names and types, e.g. `date` is a `Date`.
+standardised colomn-names and types, e.g. `date` is a `Date`.
 }
 \examples{
-uss_make_matches(engsoccerdata::spain,"Spain")
+uss_make_matches(engsoccerdata::italy, "Italy")
 }
+\keyword{internal}
