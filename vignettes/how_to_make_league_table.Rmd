@@ -21,7 +21,22 @@ library(dplyr)
 
 ussie let's you work with european football data from the engsoccerdata package by making standard tibbles for each league
 
-```{r}
+```{r make_spain_maches}
 spain <- uss_make_matches(engsoccerdata::spain,"Spain")
 glimpse(spain)
+```
+
+
+```{r italy_matches}
+italy_matches <- 
+    uss_get_matches("italy") %>% 
+    glimpse()
+italy_matches
+```
+
+We can now add filtering conditions
+
+```{r italy_filter_matches}
+uss_get_matches("italy",season==1966) %>% 
+    glimpse()
 ```
